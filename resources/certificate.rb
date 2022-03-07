@@ -1,9 +1,10 @@
 resource_name :certificate
 
 property :certfile, String
-property :cert_password, String
+property :cert_password, String, sensitive: true
 property :keychain, String
 property :apps, Array
+property :sensitive, [true, false], default: false
 
 action_class do
   def keychain
@@ -16,9 +17,11 @@ action :install do
 
   execute 'unlock keychain' do
     command [*cert.unlock_keychain(node['macos']['admin_password'])]
+    sensitive new_resource.sensitive
   end
 
   execute 'install-certificate' do
     command [*cert.install_certificate(new_resource.cert_password, new_resource.apps)]
+    sensitive new_resource.sensitive
   end
 end
