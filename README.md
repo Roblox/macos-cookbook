@@ -22,6 +22,7 @@ Chef resources and recipes for managing and provisioning macOS.
 - macOS Mojave 10.14
 - macOS Catalina 10.15
 - macOS Big Sur 11.0
+- macOS Monterey 12.0
 
 ## Resources
 
@@ -30,7 +31,6 @@ Chef resources and recipes for managing and provisioning macOS.
 - [`command_line_tools`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_command_line_tools.md)
 - [`keychain`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_keychain.md)
 - [`macos_user`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_macos_user.md)
-- [`plist`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_plist.md)
 - [`remote_management`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_remote_management.md)
 - [`spotlight`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_spotlight.md)
 - [`xcode`](https://github.com/Microsoft/macos-cookbook/blob/master/documentation/resource_xcode.md)
